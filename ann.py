@@ -1,13 +1,3 @@
-# Artificial Neural Network
-
-# Installing Theano
-# pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
-
-# Installing Tensorflow
-# pip install tensorflow
-
-# Installing Keras
-# pip install --upgrade keras
 
 # Part 1 - Data Preprocessing
 
@@ -77,7 +67,7 @@ classifier.fit(X_train, y_train, batch_size = 10, epochs = 100)
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
-y_pred = (y_pred > 0.5)
+y_pred = (y_pred > 0.5)# it will return true or false
 
 # Making the Confusion Matrix
 from sklearn.metrics import confusion_matrix
